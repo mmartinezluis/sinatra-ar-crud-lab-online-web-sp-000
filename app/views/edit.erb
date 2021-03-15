@@ -1,0 +1,7 @@
+<h1>Hello, Welcome to your Articles Website</h1>
+<form action="/articles/<%= @article.id %>" method="POST">
+<input id="hidden" type="hidden" name="_method" value="patch">
+<h2>Edit your article title: <input id="title" type="text" name="article[title]" value="<%= @article.title %>"></h2>
+<h2>Edit your article content: <input id="content" type="text" name="article[content]" value="<%= @article.content %>"></h2>
+<input type="submit" name="submit" value="submit">
+</form>
